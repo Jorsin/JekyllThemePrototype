@@ -1,0 +1,18 @@
+<!doctype html>
+<html>
+  {% include headwLocal.html %}
+  <body>
+	{% include navigation.html %}
+	{% include banner.html %}
+	<h1>{{ page.name }}</h1>
+	<hr >
+	<span>Role: {{ page.position }}</span>
+	{{ content }}
+	
+	<br>
+	<br>
+	<h2>Projects by {{ page.name }}</h2>
+	<hr >
+	
+  </body>
+</html>

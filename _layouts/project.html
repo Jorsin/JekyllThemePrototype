@@ -1,0 +1,11 @@
+<!doctype html>
+<html>
+  {% include headwLocal.html %}
+  <body>
+	{% include navigation.html %}
+	{% include banner.html %}
+	<h1>{{ page.name }}</h1>
+	<h3>Project was started on: {{ page.startDate }}</h3>
+	{{ content }}
+  </body>
+</html>
