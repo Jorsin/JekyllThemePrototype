@@ -1,0 +1,18 @@
+<div id="twitter-board" class="board">
+	<div id="twitter-panel">
+	<h2>Twitter feed</h2>
+		<a class="twitter-timeline" data-width="700" data-height="700" href="https://twitter.com/TwitterDev/timelines/539487832448843776?ref_src=twsrc%5Etfw">National Park Tweets - Curated tweets by TwitterDev</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 	
+		<h2 class="m1280">Links</h2>
+	</div>
+
+	<div id="links-panel">
+		<h2>Links</h2>
+		<ul>	
+		{% for link in site.quicklinks %}
+			<li>
+			<a href="{{ link.href }}" class="boxLink">{{ link.name }}</a>
+			</li>
+		{% endfor %}
+		</ul>	
+	</div>
+</div>
