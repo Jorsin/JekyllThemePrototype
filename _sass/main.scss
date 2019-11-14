@@ -14,14 +14,16 @@ nav {
 	margin-top: -8px;
 	margin-left: -8px;
 	height: 80px;
+	padding-left: 25%;
 }
 
 nav a {
 	display: inline-block;
-	width: 170px;
-	height: 45px;
+	width: 12%;
+	height: 30%;
 	background-color: #2B2B2B;
 	margin-right: -8px;
+	margin-top: 21px;
 	padding: 5px 10px 30px 10px;
 	color: #ccc;
 	text-align: center;
@@ -49,7 +51,7 @@ nav img {
 
 #banner {
 	width: 110%;
-	background-color: black;
+	background-color: #2B2B2B;
 	margin-top: -8px;
 	margin-left: -8px;
 	padding-left: 10px;
@@ -57,8 +59,8 @@ nav img {
 	padding-bottom: 15px;
 }
 
-#banner img:hover {
-	background-color:black;
+#banner img {
+	height: 50px;
 }
 
 hr {
@@ -81,7 +83,7 @@ h2 {
 }
 
 h3 {
-	font-size: 1.5625em;
+	font-size: 1vw;
 }
 
 h4 {
@@ -116,7 +118,7 @@ ul {
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
 position: relative;
-display: inline-block;
+display: initial;
 }
 
 /* Dropdown Content (Hidden by Default) */

@@ -1,21 +1,22 @@
 <nav>
-	<img src="assets/images/logos.svg" >
 	<button onclick="toggleMenu();" id="menu-button">Menu &#8801;</button>
 	{% for item in site.data.navigation %}
     	{% if item.name contains 'Research' %}
-		<div class="dropdown">
-		<a href="{{ item.link }}" class="navlink droplink{% if page.url == item.link %} current{% endif %}"><h3>{{ item.name }}</h3></a>
-		<button onclick="toggleResearch();" class="arrowButton navlink"><h3>&#11167;</h3></button>
-		<div class="dropdown-content">
-			<a href="#">Link 1</a>
-			<a href="#">Link 2</a>
-			<a href="#">Link 3</a>
-		</div>
-		</div>
+			<div class="dropdown">
+			<a href="{{ item.link }}" class="navlink droplink{% if page.url == item.link %} current{% endif %}">
+				<h3>{{ item.name }}</h3>
+			</a>
+			<button onclick="toggleResearch();" class="arrowButton navlink"><h3>&#11167;</h3></button>
+			<div class="dropdown-content">
+				<a href="#">Link 1</a>
+				<a href="#">Link 2</a>
+				<a href="#">Link 3</a>
+			</div>
+			</div>
 		{% else %}
-		<a href="{{ item.link }}" class="navlink {% if page.url == item.link %}current{% endif %}">
-			<h3>{{ item.name }}</h3>
-		</a>
+			<a href="{{ item.link }}" class="navlink {% if page.url == item.link %}current{% endif %}">
+				<h3>{{ item.name }}</h3>
+			</a>
 		{% endif %}
 	{% endfor %}
 </nav>
