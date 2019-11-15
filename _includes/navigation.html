@@ -8,9 +8,9 @@
 			</a>
 			<button onclick="toggleResearch();" class="arrowButton navlink"><h3>&#11167;</h3></button>
 			<div class="dropdown-content">
-				<a href="#">Link 1</a>
-				<a href="#">Link 2</a>
-				<a href="#">Link 3</a>
+				{% for link in site.data.droplinks %}
+					<a href="{{ link.href }}">{{ link.name }}</a>
+				{% endfor %} 
 			</div>
 			</div>
 		{% else %}
