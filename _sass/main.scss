@@ -43,8 +43,9 @@ nav a:hover {
 nav img {
 	display: block;
 	float: left;
-	width: 20%;
-	margin-top: 1%;
+	max-width: 10%;
+	min-width: 5%;
+	margin-top: 0.3%;
 	margin-left: -17%;
 }
 
