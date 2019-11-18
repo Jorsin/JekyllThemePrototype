@@ -18,14 +18,6 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-collections_dir: collect
-
-collections:
-     people:
-        output: true
-     projects:
-        output: true
-
 # Build settings
 #theme: WandTheme-0.1.0
 #plugins:
