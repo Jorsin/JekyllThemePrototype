@@ -7,13 +7,13 @@ A theme made for the wand website.
 Add this line to your Jekyll site's `Gemfile`:
 
 ```ruby
-gem "theme-jorsin"
+gem "proto-theme3"
 ```
 
 And add this line to your Jekyll site's `_config.yml`:
 
 ```yaml
-theme: theme-jorsin
+theme: proto-theme3
 ```
 
 And then execute:
@@ -22,7 +22,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install theme-jorsin
+    $ gem install proto-theme3
 
 ## Usage
 
