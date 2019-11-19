@@ -31,3 +31,10 @@
 	padding-bottom: 1%;
 	margin-top: 2%;
 }
+
+#topic {
+	display: inline-block;
+	margin: auto;
+	text-align: initial;
+	max-width: 80%;
+}
