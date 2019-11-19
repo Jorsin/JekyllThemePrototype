@@ -7,6 +7,23 @@
 			<div id="topic">
 				<h2>{{ page.name }}</h2>
 				{{ content }}
+				<ul>
+					{% for externalProject in site.data.externalProject %}
+						{% if page.name == externalProject.topic %}
+						<li>
+							<a href="{{ externalProject.link }}">{{ externalProject.name }}</a>
+						</li>
+						{% endif %}
+					{% endfor %}
+
+					{% for internalProject in site.projects %}
+						{% if page.name == internalProject.topic %}
+						<li>
+							<a href="{{ internalProject.url }}">{{ internalProject.name }}</a>
+						</li>
+						{% endif %}
+					{% endfor %}
+				</ul>
 			</div>
 		</div>
 	</body>
