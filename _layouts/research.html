@@ -9,7 +9,7 @@ layout: default
 	<ul>
 		{% for topic in site.research %}
 		<li>
-			<span>{{ topic.content | truncate: 200 }}</span>
+			{{ topic.content }}
 			<a href="{{ topic.url }}" class="boxLink">{{ topic.name }}</a>
 		</li>
 		{% endfor %}
