@@ -9,7 +9,7 @@
 }
 
 #contentContainer {
-	padding: 1% 5% 5% 5%;
+	padding: 1% 5% 0% 5%;
 	font-family: "Roboto", san-serif;
 	text-align: center;
 } 
@@ -38,7 +38,7 @@
 }
 													
 #welcome-board img {                                    
-	width: 950px;                               
+	width: 90%;                               
 	height: 450px;                              
 	display: inline-block;                      
 	background-color: #A0A0A0;
@@ -49,7 +49,7 @@
 	display: inline-block;
 	float: left;
 	text-align: left;
-	width: 60%;
+	width: 30%;
 	height: 40%;
 }
 
@@ -80,5 +80,8 @@
 
 #twitter-wlinks {
 	display: inline-block;
-	max-width: 70%;
+	background-color: #d2d4d9;
+	width: 120%;
+	padding-left: 30%;
+	margin-left: -15%;
 }

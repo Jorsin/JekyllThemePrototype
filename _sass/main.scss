@@ -5,7 +5,7 @@ html {
 }
 
 .current {
-	background-color: #BB261A;
+	background-color: #9C1E14;
 }
 
 nav {
@@ -33,7 +33,7 @@ nav a {
 }
 
 nav a:hover {
-	background-color: #BB261A;
+	background-color: #9C1E14;
 }
 
 .current:hover{
@@ -102,7 +102,7 @@ ul {
 
 .boxLink {
 	display: inline-block;
-	background-color: darkred;
+	background-color: #9C1E14;
 	padding: 8px;
 	min-width: 100px;
 	color: white;
@@ -135,7 +135,7 @@ ul {
 	padding: 6% 1% 4% 6%;
 	text-decoration: none;
 	display: block;
-	background-color: #BB261A;
+	background-color: #9C1E14;
 	width: 90%;
 	text-align: left;
 }
@@ -147,10 +147,10 @@ ul {
 .dropdown:hover .dropdown-content {display: block;}
 
 /* Keep research button red */
-.dropdown:hover .droplink {background-color: #BB261A;}
+.dropdown:hover .droplink {background-color: #9C1E14;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.droplink:hover .droplink {background-color: #BB261A;}
+.droplink:hover .droplink {background-color: #9C1E14;}
 
 #menu-button {
 	display: none;

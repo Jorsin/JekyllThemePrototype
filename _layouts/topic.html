@@ -7,23 +7,34 @@
 			<div id="topic">
 				<h2>{{ page.name }}</h2>
 				{{ content }}
-				<ul>
+
+				<h3>Projects</h3>
+				<table>
+					<tr id="tableHead">
+						<td>Name</td>
+						<td>Description</td>
+						<td>Link</td>
+					</tr>
 					{% for externalProject in site.data.externalProject %}
 						{% if page.name == externalProject.topic %}
-						<li>
-							<a href="{{ externalProject.link }}">{{ externalProject.name }}</a>
-						</li>
+						<tr>
+							<td>{{ externalProject.name }}</td>
+							<td>{{ externalProject.description }}</td>
+							<td class="linkCell"><a href="{{ externalProject.link }}" class="boxLink">Link</a></td>
+						</tr>
 						{% endif %}
 					{% endfor %}
 
 					{% for internalProject in site.projects %}
 						{% if page.name == internalProject.topic %}
-						<li>
-							<a href="{{ internalProject.url }}">{{ internalProject.name }}</a>
-						</li>
+						<tr>
+							<td>{{ internalProject.name }}</td>
+							<td>{{ internalProject.description }}</td>
+							<td class="linkCell"><a href="{{ internalProject.url }}" class="boxLink">Link</a></td>
+						</tr>
 						{% endif %}
 					{% endfor %}
-				</ul>
+				</table>
 			</div>
 		</div>
 	</body>
