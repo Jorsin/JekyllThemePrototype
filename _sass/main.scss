@@ -118,6 +118,7 @@ ul {
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
 	display: contents;
+	font-family: "Roboto", san-serif;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -127,7 +128,6 @@ ul {
 	min-width: 20%;
 	z-index: 1;
 	margin-left: 15%;
-	font-size: 1vw;
 }
 
 /* Links inside the dropdown */
@@ -141,7 +141,7 @@ ul {
 }
 
 /* Change color of dropdown links on hover */
-.dropdown-content a:hover {text-decoration: underline;}
+.dropdown-content a:hover {font-weight: bold;}
 
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {display: block;}

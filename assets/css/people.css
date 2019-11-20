@@ -26,6 +26,10 @@
 	margin: 0px;
 }
 
+#people .oddpCatagory {
+	background-color: #d2d4d9;
+}
+
 .peopleImg {
 	background-color: #A0A0A0;
 	height: 200px;
@@ -35,7 +39,8 @@
 
 .pCatagory {
 	display: inline-block;
-	margin-left: 10%;
 	text-align: left;
-	width: 70%;
+	width: 140%;
+	margin-left: -6.5%;
+	padding-left: 26.5%;
 }

@@ -45,6 +45,14 @@
 	background-color: #d2d4d9;
 }
 
+#research .first {
+	border-top: 15px solid white;
+}
+
+#topic #thSpacer {
+	height: 15px;
+}
+
 #topic, #project{
 	display: inline-block;
 	margin: auto;
@@ -63,7 +71,7 @@
 
 #topic tr {
 	background-color: #d2d4d9;
-	border-bottom: 6px solid white;
+	border-bottom: 15px solid white;
 }
 
 #topic .linkCell {
