@@ -26,7 +26,6 @@
 	max-width: 50%;
 	margin-right: 5%;
 	display: inline;
-	background-color: #fafafa;
 }
 
 #welcome-panel p {
@@ -75,12 +74,12 @@
 	width: 200px;
 	text-align: center;
 	padding-top: 15px;
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 }
 
 #twitter-wlinks {
 	display: inline-block;
-	background-color: #F4F4F4;
+	background-color: #EAEAEA;
 	width: 120%;
 	padding-left: 30%;
 	margin-left: -15%;
