@@ -31,7 +31,8 @@
 						<tr>
 							<td>{{ internalProject.name }}</td>
 							<td>{{ internalProject.description }}</td>
-							<td class="linkCell"><a href="{{ internalProject.url }}" class="boxLink">Link</a></td>
+							{% assign projectHref = internalProject.url | remove_first: "/" %}
+							<td class="linkCell"><a href="{{ projectHref }}" class="boxLink">Link</a></td>
 						</tr>
 						{% endif %}
 					{% endfor %}
