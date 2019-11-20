@@ -11,7 +11,8 @@
 			</a>
 			<div class="dropdown-content">
 				{% for topic in site.research %}
-					<a href="{{ topic.url }}">{{ topic.name }}</a>
+					{% assign topicHref = topic.url | remove_first: "/" %}
+					<a href="{{ topicHref }}">{{ topic.name }}</a>
 				{% endfor %} 
 			</div>
 			</div>
