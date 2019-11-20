@@ -7,7 +7,6 @@ layout: default
 
 <div id="research">
 	<ul>
-		<hr>
 		{% for topic in site.research %}
 		{% assign indexOdd = forloop.index0 | modulo: 2 %}
 		<li {% if indexOdd == 1 %} class="oddResearch"{% endif %}>
