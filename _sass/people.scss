@@ -16,6 +16,11 @@
 	height: 300px;
 	width: 200px;
 	margin-right: 70px;
+	outline: none;
+}
+
+#people ul a:active {
+	outline: none;
 }
 
 #people ul li {

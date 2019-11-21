@@ -1,6 +1,6 @@
 <nav>
 	<button onclick="toggleMenu();" id="menu-button">Menu &#8801;</button>
-	<img src="assets/images/logo.svg" alt="Wand logo" >
+	<img src="assets/images/thin-logo-small.svg" alt="Wand logo" >
 	{% assign linkCompare = page.url | remove: '/' %}
 	{% if page.url == '/' %}{% assign linkCompare = '.' %}{% endif %}
 	{% for item in site.data.navigation %}
