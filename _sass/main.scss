@@ -1,3 +1,6 @@
+$btnRed: #9C1E14;
+$backGrey: #EAEAEA;
+$navBlack: #2B2B2B;
 
 html {
 	max-width: 110%;
@@ -5,12 +8,12 @@ html {
 }
 
 .current {
-	background-color: #9C1E14;
+	background-color: $btnRed;
 }
 
 nav {
 	display: inline-block;
-	background-color: #2B2B2B;
+	background-color: $navBlack;
 	width: 110%;
 	margin-top: -8px;
 	margin-left: -8px;
@@ -21,7 +24,7 @@ nav a {
 	display: inline-block;
 	width: 12%;
 	height: 5%;
-	background-color: #2B2B2B;
+	background-color: $navBlack;
 	margin-right: -0.5%;
 	margin-top: auto;
 	padding: 0% 1% 0.5% 1%;
@@ -33,11 +36,11 @@ nav a {
 }
 
 nav a:hover {
-	background-color: #9C1E14;
+	background-color: $btnRed;
 }
 
 .current:hover{
-	background-color: #2B2B2B;
+	background-color: $navBlack;
 }
 
 nav img {
@@ -51,7 +54,7 @@ nav img {
 
 #banner {
 	width: 130%;
-	background-color: #2B2B2B;
+	background-color: $navBlack;
 	margin-top: -8px;
 	margin-left: -8px;
 	padding-left: 10px;
@@ -102,7 +105,7 @@ ul {
 
 .boxLink {
 	display: inline-block;
-	background-color: #9C1E14;
+	background-color: $btnRed;
 	padding: 8px;
 	min-width: 100px;
 	color: white;
@@ -135,7 +138,7 @@ ul {
 	padding: 6% 1% 4% 6%;
 	text-decoration: none;
 	display: block;
-	background-color: #9C1E14;
+	background-color: $btnRed;
 	width: 90%;
 	text-align: left;
 }
@@ -147,10 +150,10 @@ ul {
 .dropdown:hover .dropdown-content {display: block;}
 
 /* Keep research button red */
-.dropdown:hover .droplink {background-color: #9C1E14;}
+.dropdown:hover .droplink {background-color: $btnRed;}
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
-.droplink:hover .droplink {background-color: #9C1E14;}
+.droplink:hover .droplink {background-color: $btnRed;}
 
 #menu-button {
 	display: none;
@@ -160,4 +163,14 @@ ul {
 	display: none;
 }
 
+#contentContainer h1 {
+	color: #cc0000;
+}
 
+#contentContainer h2 {
+	color: #cc0000;
+}
+
+html, body {
+	height: 100%;
+}

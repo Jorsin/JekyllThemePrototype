@@ -42,7 +42,7 @@
 }
 
 #research .oddResearch {
-	background-color: #EAEAEA;
+	background-color: $backGrey;
 }
 
 #research .first {
@@ -70,7 +70,7 @@
 }
 
 #topic tr {
-	background-color: #EAEAEA;
+	background-color: $backGrey;
 	border-bottom: 15px solid white;
 }
 
@@ -79,5 +79,5 @@
 }
 
 #topic #tableHead {
-	border-bottom: 3px solid darkred;
+	border-bottom: 3px solid $btnRed;
 }
