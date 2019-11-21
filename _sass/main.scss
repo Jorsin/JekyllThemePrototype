@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
 $btnRed: #9C1E14;
+$headerRed: #BB261A;
 $backGrey: #EAEAEA;
 $navBlack: #2B2B2B;
+$siteFont: "Roboto", sans-serif;
 
 html {
 	max-width: 110%;
@@ -67,14 +71,14 @@ nav img {
 }
 
 hr {
-	color: #cc0000;
-	background-color: #cc0000;
+	color: $headerRed;
+	background-color: $headerRed;
 	border: none;
 	height: 1px;
 }
 
 h1, h2, h3, h4, p {
-	font-family: "Roboto", serif;
+	font-family: $siteFont;
 }
 
 h1 {
@@ -90,7 +94,7 @@ h3 {
 }
 
 h4 {
-	font-size: 1.25em;
+	font-size: 1em;
 }
 
 p {
@@ -121,7 +125,7 @@ ul {
 /* The container <div> - needed to position the dropdown content */
 .dropdown {
 	display: contents;
-	font-family: "Roboto", san-serif;
+	font-family: $siteFont;
 }
 
 /* Dropdown Content (Hidden by Default) */
@@ -164,11 +168,11 @@ ul {
 }
 
 #contentContainer h1 {
-	color: #cc0000;
+	color: $headerRed;
 }
 
 #contentContainer h2 {
-	color: #cc0000;
+	color: $headerRed;
 }
 
 html, body {

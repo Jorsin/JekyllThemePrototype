@@ -1,6 +1,6 @@
 
 #welcome-panel a {
-	color: #BB261A;
+	color: $headerRed;
 	margin-top: 20px;
 }
 
@@ -10,7 +10,7 @@
 
 #contentContainer {
 	padding: 1% 5% 0% 5%;
-	font-family: "Roboto", san-serif;
+	font-family: $siteFont;
 	text-align: center;
 } 
 
