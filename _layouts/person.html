@@ -6,6 +6,7 @@
 		<div id="contentContainer">
 			<div id="person">
 				<h2>{{ page.name }}</h2>
+				<img src="../assets/images/{{ page.name | downcase | replace: ' ', '_' }}" class="peopleImg" alt=" ">
 				{{ content }}
 			</div>
 		</div>
