@@ -1,13 +1,7 @@
 <head>
 	<meta charset="utf-8">
 	<title>{{ page.title }}</title>
-	{% if site.baseurl != null %}
 		<link rel ="stylesheet" href="{{ 'assets/css/styles.css' | absolute_url }}">
 		<link rel ="stylesheet" href="{{ 'assets/css/local.css' | absolute_url }}">
 		<script type="text/javascript" src="{{ 'assets/js/local.js' | absolute_url }}"></script>
-	{% else %}
-	<link rel ="stylesheet" href="assets/css/styles.css">
-	<link rel ="stylesheet" href="assets/css/local.css">
-	<script type="text/javascript" src="assets/js/local.js"></script>
-	{% endif %}
 </head>
