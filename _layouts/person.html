@@ -1,14 +1,9 @@
-<!doctype html>
-<html>
-	{% include headwLocal.html %}
-	<body>
-		{% include navigation2.html %}
-		<div id="contentContainer">
-			<div id="person">
-				<h2>{{ page.name }}</h2>
-				<img src="../assets/images/{{ page.name | downcase | replace: ' ', '_' }}" class="peopleImg" alt=" ">
-				{{ content }}
-			</div>
-		</div>
-	</body>
-</html>
+---
+layout: default
+---
+
+<div id="person">
+	<h2>{{ page.name }}</h2>
+	<img src="../assets/images/{{ page.name | downcase | replace: ' ', '_' }}" class="peopleImg" alt=" ">
+	{{ content }}
+</div>
