@@ -4,7 +4,7 @@
 	{% assign linkCompare = page.url | remove: '/' %}
 	{% if page.url == '/' %}{% assign linkCompare = '.' %}{% endif %}
 	{% for item in site.data.navigation %}
-    	{% if item.name contains '&#11167;' %} 
+    	{% if item.drop != null %}
 			<div class="dropdown">
 			<a href="{{ item.link }}" class="navlink droplink{% if linkCompare == item.link %} current{% endif %}">
 				<h3>{{ item.name }}</h3>
