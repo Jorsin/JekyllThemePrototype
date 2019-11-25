@@ -23,6 +23,7 @@ footer {
 }
 
 #banner {
+	display: none;
 	width: 130%;
 	background-color: $navBlack;
 	margin-top: -8px;
@@ -33,7 +34,7 @@ footer {
 }
 
 #banner img {
-	height: 50px;
+	width: 30%;
 }
 
 hr {
