@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 	{% include headwLocal.html %}
-	<body>
+	<body onload="clean(document);">
 		{% include navigation.html %}
 		<div id="contentContainer">
 			{{ content }}

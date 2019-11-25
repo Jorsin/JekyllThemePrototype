@@ -10,10 +10,11 @@
 				<h3>{{ item.name }}</h3>
 			</a>
 			<div class="dropdown-content">
-				{% for topic in site.research %}
-					{% assign topicHref = topic.url | remove_first: "/" %}
-					<a href="{{ topicHref | absolute_url }}">{{ topic.name }}</a>
-				{% endfor %} 
+				{% assign nameCompare = item.name | downcase %}
+				{% for topic in site[nameCompare] %}
+						{% assign topicHref = topic.url | remove_first: "/" %}
+						<a href="{{ topicHref | absolute_url }}">{{ topic.name }}</a>
+				{% endfor %}
 			</div>
 			</div>
 		{% else %}
