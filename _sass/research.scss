@@ -53,6 +53,10 @@
 	height: 15px;
 }
 
+#topic #thSpacer td {
+	display: none;
+}
+
 #topic, #project{
 	display: inline-block;
 	margin: auto;

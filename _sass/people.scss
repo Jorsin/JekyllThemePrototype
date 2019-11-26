@@ -25,12 +25,13 @@
 
 #people ul li {
 	text-align: left;
-	display: block;
+	display: inline-block;
 }
 
 #people ul li h4 {
 	margin: 0px;
 	padding: 0px;
+	padding-top: 15px;
 }
 
 #people ul li p {

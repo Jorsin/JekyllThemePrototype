@@ -1,5 +1,5 @@
 <nav id="navigation">
-	<img src="{{ 'assets/images/thin-logo-small.svg' | absolute_url }}" alt="Wand logo" >
+	<a id="navImg" href="{{ site.data.navigation[0].link | absolute_url }}" ><img src="{{ 'assets/images/thin-logo-small.svg' | absolute_url }}" alt="Wand logo" ></a>
 	{% assign linkCompare = page.url | remove: '/' %}
 	{% if page.url == '/' %}{% assign linkCompare = '.' %}{% endif %}
 	{% for item in site.data.navigation %}

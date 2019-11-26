@@ -36,8 +36,20 @@ nav img {
 	display: block;
 	float: left;
 	width: 8em;
+}
+
+#navImg {
+	display: block;
+	float: left;
+	width: 8em;
 	margin-left: -17%;
 	margin-top: 5px;
+	height: auto;
+	text-align: initial;
+}
+
+#navImg:hover {
+	background-color: transparent;
 }
 
 /* Dropdown Button */

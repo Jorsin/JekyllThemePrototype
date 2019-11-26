@@ -5,5 +5,6 @@ layout: default
 <div id="person">
 	<h2>{{ page.name }}</h2>
 	<img src="../assets/images/{{ page.name | downcase | replace: ' ', '_' }}" class="peopleImg" alt=" ">
+	<h4>{{ page.role }}</h4>
 	{{ content }}
 </div>

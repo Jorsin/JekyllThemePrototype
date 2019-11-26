@@ -1,4 +1,6 @@
 @media (max-width: 550px) {
+	$navPos: fixed;
+
 	body {
 		
 	}
@@ -6,18 +8,18 @@
 	#banner {
 		display: inline-block;
 		z-index: 1;
-		position: fixed;
+		position: $navPos;
 	}
 
 	nav {
 		/* min-height: 50px; */
-		margin-top: -100%;
 		display: block;
-		position: fixed;
-		transition: all 1s ease-in-out;
+		position: $navPos;
+		transform: translate(0%, -100%);
+		transition: transform 0.45s ease-out;
 	}
 
-	nav img {
+	nav #navImg {
 		display: none;
 	}
 
@@ -46,6 +48,10 @@
 		margin-right: 25%;
 	}
 
+	#menu-button::-moz-focus-inner {
+		border: 0;
+	}
+
 	.extended {
 		display: inline-block;
 	}
@@ -53,6 +59,8 @@
 	.extendnav {
 		margin-bottom: 10px;
 		margin-top: 51px;
+		transform: translate(0%, 0%);
+		transition: transform 0.4s ease-in;
 	}
 
 	.dropdown:hover .dropdown-content {display: none;}
