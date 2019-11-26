@@ -2,7 +2,7 @@
 	background-color: $btnRed;
 }
 
-nav, footer {
+nav {
 	display: inline-block;
 	background-color: $navBlack;
 	width: 110%;
@@ -35,9 +35,9 @@ nav a:hover {
 nav img {
 	display: block;
 	float: left;
-	max-width: 8%;
-	min-width: 5%;
+	width: 8em;
 	margin-left: -17%;
+	margin-top: 5px;
 }
 
 /* Dropdown Button */

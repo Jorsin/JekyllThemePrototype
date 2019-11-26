@@ -1,11 +1,12 @@
 <!doctype html>
 <html>
 	{% include headwLocal.html %}
-	<body onload="clean(document);">
+	<body onload="clean(document.getElementById('navigation'));">
 		{% include banner.html %}
 		{% include navigation.html %}
 		<div id="contentContainer">
 			{{ content }}
 		</div>
+		{% include footer.html %}
 	</body>
 </html>
