@@ -4,6 +4,37 @@
 	width: 80%;
 }
 
-#plain h4 {
+#plain h4, #maps h4 {
 	color: $headerRed;
+}
+
+#maps {
+	width: 80%;
+	display: inline-block;
+}
+
+#maps-content {
+	text-align: left;
+	width: 40%;
+	display: inline-block;
+	min-width: 200px;
+	padding-right: 1%;
+	float: left;
+}
+
+#maps-panel {
+	display: inline-block;
+	width: 50%;
+	min-width: 200px;
+	height: 500px;
+	padding-top: 10em;
+}
+
+#maps strong, #plain strong{
+	font-size: 1.1em;
+	font-weight: 600;
+}
+
+#maps p a {
+	text-decoration: none;
 }

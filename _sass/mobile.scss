@@ -84,11 +84,28 @@
 		padding-top: 17%;
 	}
 
-	#topic, #project {
+	#topic, #project, #maps {
 		width: 100%;
 	}
 
 	#research li {
 		padding-right: 0;
+	}
+
+	#maps-content {
+		padding-right: 0px;
+		width: 100%;
+	}
+
+	#maps-panel {
+		display: inline-block;
+		width: 100%;
+		min-width: 200px;
+		height: 100px;
+		padding-top: 1em;
+	}
+
+	#maps {
+		padding-bottom: 5%;
 	}
 }
