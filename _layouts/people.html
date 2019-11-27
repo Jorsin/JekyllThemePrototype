@@ -17,7 +17,7 @@ layout: default
 			{% assign personHref = person.url | remove_first: "/" %}
 			<li class="person">
 				<a href="{% if person.link != null %}{{ person.link }}{% else %}{{ personHref }}{% endif %}">
-				<img src="assets/images/{{ person.name | downcase | replace: ' ', '_' }}" class="peopleImg" alt=" ">
+				<img src="assets/images/{{ person.name | downcase | replace: ' ', '_' | append: '.png' }}" class="peopleImg" alt=" ">
 				<h4>{{ person.name }}</h4>
 				</a>
 			</li>
