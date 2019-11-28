@@ -2,39 +2,48 @@
 	display: inline-block;
 	text-align: left;
 	width: 80%;
-}
 
-#plain h4, #maps h4 {
-	color: $headerRed;
+	& h4 {
+		color: $headerRed;
+	}
+
+	& strong {
+		font-size: 1.1em;
+		font-weight: 600;
+	}
 }
 
 #maps {
 	width: 80%;
 	display: inline-block;
-}
 
-#maps-content {
-	text-align: left;
-	width: 40%;
-	display: inline-block;
-	min-width: 200px;
-	padding-right: 1%;
-	float: left;
-}
+	&-content {
+		text-align: left;
+		width: 40%;
+		display: inline-block;
+		min-width: 200px;
+		padding-right: 1%;
+		float: left;
+	}
 
-#maps-panel {
-	display: inline-block;
-	width: 50%;
-	min-width: 200px;
-	height: 500px;
-	padding-top: 10em;
-}
+	&-panel {
+		display: inline-block;
+		width: 50%;
+		min-width: 200px;
+		height: 500px;
+		padding-top: 10em;
+	}
 
-#maps strong, #plain strong{
-	font-size: 1.1em;
-	font-weight: 600;
-}
+	p a {
+		text-decoration: none;
+	}
 
-#maps p a {
-	text-decoration: none;
+	strong {
+		font-size: 1.1em;
+		font-weight: 600;
+	}
+	
+	h4 {
+		color: $headerRed;
+	}
 }

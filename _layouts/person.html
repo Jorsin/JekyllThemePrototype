@@ -4,40 +4,37 @@ layout: default
 
 <div id="person">
 	<h2>{{ page.name }}</h2>
-	<img src="../assets/images/{{ page.name | downcase | replace: ' ', '_' }}" class="peopleImg" alt=" ">
-	<h4>{{ page.role }}</h4>
+	<h5>{{ page.role }}</h5>
+	<img src="../assets/images/{{ page.name | downcase | replace: ' ', '_' | append: '.png' }}" class="peopleImg" alt=" ">
 	{{ content }}
-</div>
+	{% if page.projects != null %}
+	<h4>Projects</h4>
+	<ul>
+		{% assign projectsArray = page.projects | split: ',' %}
+		{% for project in projectsArray %}
+		{% assign projectCompare = project | strip %}
+			{% for externalProject in site.data.externalProject %}
+				{% if projectCompare == externalProject.name %}
+				<li>
+					<h6>{{ externalProject.name }}</h6>
+					<span>{{ externalProject.topic }}</span>
+					<p>{{ externalProject.description }}</p>
+					<a href="{{ externalProject.link }}" class="boxLink">Link</a>
+				</li>
+				{% endif %}
+			{% endfor %}
 
-<div id="person">
-
-	<h3>Projects</h3>
-	<table>
-		<tr id="tableHead">
-			<td>Name</td>
-			<td>Description</td>
-			<td>Link</td>
-		</tr>
-		<tr id="thSpacer"><td></td><td></td><td></td></tr>
-		{% for externalProject in site.data.externalProject %}
-			{% if page.name == externalProject.topic %}
-			<tr>
-				<td>{{ externalProject.name }}</td>
-				<td>{{ externalProject.description }}</td>
-				<td class="linkCell"><a href="{{ externalProject.link }}" class="boxLink">Link</a></td>
-			</tr>
-			{% endif %}
+			{% for internalProject in site.projects %}
+				{% if projectCompare == internalProject.name %}
+				<li>
+					<h6>{{ internalProject.name }}</h6>
+					<span>{{ internalProject.topic }}</span>
+					<p>{{ internalProject.description }}</p>
+					<a href="{{ internalProject.url | absolute_url }}" class="boxLink">Link</a>
+				</li>
+				{% endif %}
+			{% endfor %}
 		{% endfor %}
-
-		{% for internalProject in site.projects %}
-			{% if page.name == internalProject.topic %}
-			<tr>
-				<td>{{ internalProject.name }}</td>
-				<td>{{ internalProject.description }}</td>
-				{% assign projectHref = internalProject.url | remove_first: "/" %}
-				<td class="linkCell"><a href="../{{ projectHref }}" class="boxLink">Link</a></td>
-			</tr>
-			{% endif %}
-		{% endfor %}
-	</table>
+	</ul>
+	{% endif %}
 </div>

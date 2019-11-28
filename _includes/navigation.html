@@ -6,7 +6,7 @@
     	{% if item.drop != null %}
 			<div class="dropdown">
 			<a href="{{ item.link | absolute_url }}" class="navlink droplink{% if linkCompare == item.link %} current{% endif %}">
-				<h3>{{ item.name }}</h3>
+				<h6>{{ item.name }}</h6>
 			</a>
 			<div class="dropdown-content">
 				{% assign nameCompare = item.name | downcase %}
@@ -18,7 +18,7 @@
 			</div>
 		{% else %}
 			<a href="{{ item.link | absolute_url }}" class="navlink {% if linkCompare  == item.link %}current{% endif %}">
-				<h3>{{ item.name }}</h3>
+				<h6>{{ item.name }}</h6>
 			</a>
 		{% endif %}
 	{% endfor %}

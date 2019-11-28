@@ -1,45 +1,60 @@
-#peopleInput {
-	width: 50%;
-	display: inline-block;
-	text-align: left;
-	padding-right: 10%;
-}
+#people {
 
-#people .pCatagory h1 {
-	margin-top: 0.5%;
-}
+	&Input {
+		width: 50%;
+		display: inline-block;
+		text-align: left;
+		padding-right: 10%;
+	}
 
-#people ul a {
-	display: inline-block;
-	text-decoration: none;
-	color: black;
-	height: 300px;
-	width: 200px;
-	margin-right: 70px;
-	outline: none;
-}
+	.pCatagory h1 {
+		margin-top: 0.5%;
+	}
 
-#people ul a:active {
-	outline: none;
-}
+	ul a {
+		display: inline-block;
+		text-decoration: none;
+		color: black;
+		height: 300px;
+		width: 200px;
+		margin-right: 70px;
+		outline: none;
 
-#people ul li {
-	text-align: left;
-	display: inline-block;
-}
+		&:active {
+			outline: none;
+		}
+	}
 
-#people ul li h4 {
-	margin: 0px;
-	padding: 0px;
-	padding-top: 15px;
-}
+	ul li {
+		text-align: left;
+		display: inline-block;
 
-#people ul li p {
-	margin: 0px;
-}
+		h4 {
+			margin: 0px;
+			padding: 0px;
+			padding-top: 15px;
+		}
 
-#people .oddpCatagory, .oddSect {
-	background-color: $backGrey; 
+		p {
+			margin: 0px;
+		}
+	}
+
+	.oddpCatagory {
+		background-color: $backGrey; 
+	}
+
+	.pCatagory {
+		display: inline-block;
+		text-align: left;
+		width: 140%;
+		margin-left: -6.5%;
+		padding-left: 26.5%;
+
+		ul {
+			width: 70%;
+		}
+	}
 }
 
 .peopleImg {
@@ -49,21 +64,39 @@
 	display: block;
 }
 
-.pCatagory {
-	display: inline-block;
-	text-align: left;
-	width: 140%;
-	margin-left: -6.5%;
-	padding-left: 26.5%;
-}
-
-.pCatagory ul {
-	width: 70%;
+.oddSect {
+	background-color: $backGrey; 
 }
 
 #person {
 	display: inline-block;
 	margin: auto;
 	text-align: initial;
-	width: 40%;
+	width: 50%;
+	margin-right: 30%;
+
+	li {
+		display: block;
+		margin-bottom: 2em;
+
+		span {
+			color: grey;
+		}
+
+		h6, span {
+			margin: 0;
+		}
+	}
+
+	h5 {
+		margin-top: 0;
+	}
+
+	h2 {
+		margin-bottom: 0;
+	}
+	
+	h4 {
+		color: $headerRed;
+	}
 }

@@ -9,6 +9,10 @@
 		display: inline-block;
 		z-index: 1;
 		position: $navPos;
+
+		a {
+			outline: none;
+		}
 	}
 
 	nav {
@@ -17,19 +21,19 @@
 		position: $navPos;
 		transform: translate(0%, -100%);
 		transition: all 0.45s ease-in;
-	}
 
-	nav #navImg {
-		display: none;
-	}
+		#navImg {
+			display: none;
+		}
 
-	nav a {
-		/* display: none; */
-		margin-top: 0;
-		width: 100%;
-		margin-left: -20%;
-		padding-left: 50px;
-		text-align: left;
+		a {
+			/* display: none; */
+			margin-top: 0;
+			width: 100%;
+			margin-left: -20%;
+			padding-left: 50px;
+			text-align: left;
+		}
 	}
 
 	#menu-button {
@@ -37,19 +41,24 @@
 		border: none;
 		outline: none;
 		outline-width: 0;
-		background-color: #2B2B2B;
+		background-color: $navBlack;
 		color: white;
 		font-size: 1.6em;
 		font-weight: bold;
 		margin-top: -10px;
 		display: block;
 		height: 60px;
-		width: 40%;
+		width: 20%;
 		margin-right: 25%;
-	}
 
-	#menu-button::-moz-focus-inner {
-		border: 0;
+		img {
+			width: 1em;
+			margin-left: 10%;
+		}
+
+		&::-moz-focus-inner {
+			border: 0;
+		}
 	}
 
 	.extended {
@@ -67,13 +76,13 @@
 	
 	#c-content {
 		width: 100%;
-	}
 
-	#c-content #twitter-content {
-		min-width: 0;
-		margin-right: 0;
-		margin-left: 0;
-		max-width: none;
+		#twitter-content {
+			min-width: 0;
+			margin-right: 0;
+			margin-left: 0;
+			max-width: none;
+		}
 	}
 
 	.pCatagory {
@@ -103,9 +112,5 @@
 		min-width: 200px;
 		height: 100px;
 		padding-top: 1em;
-	}
-
-	#maps {
-		padding-bottom: 5%;
 	}
 }

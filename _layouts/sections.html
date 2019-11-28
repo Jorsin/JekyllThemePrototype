@@ -4,7 +4,7 @@ layout: default
 
 <div id="c-content">
     <div id="section">
-            {% assign sections = content | split: '<!--Split-->' %}
+            {% assign sections = content | split: '<!--split-->' %}
             {% for sect in sections %}
                 {% assign indexOdd2 = forloop.index0 | modulo: 2 %}
                 <div {% if indexOdd2 == 1 %} class="oddSect"{% endif %}>
