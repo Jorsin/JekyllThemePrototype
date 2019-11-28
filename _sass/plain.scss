@@ -1,7 +1,7 @@
 #plain {
+	@extend %main-div;
 	display: inline-block;
 	text-align: left;
-	width: 80%;
 
 	& h4 {
 		color: $headerRed;
@@ -14,7 +14,7 @@
 }
 
 #maps {
-	width: 80%;
+	@extend %main-div;
 	display: inline-block;
 
 	&-content {

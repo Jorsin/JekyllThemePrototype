@@ -1,10 +1,10 @@
 #people {
+	@extend %main-div;
 
 	&Input {
-		width: 50%;
+		@extend %main-div;
 		display: inline-block;
 		text-align: left;
-		padding-right: 10%;
 	}
 
 	.pCatagory h1 {
@@ -47,9 +47,9 @@
 	.pCatagory {
 		display: inline-block;
 		text-align: left;
-		width: 140%;
-		margin-left: -6.5%;
-		padding-left: 26.5%;
+		width: 110%;
+		margin-left: -20%;
+		padding-left: 40%;
 
 		ul {
 			width: 70%;
@@ -69,11 +69,9 @@
 }
 
 #person {
+	@extend %main-div;
 	display: inline-block;
-	margin: auto;
 	text-align: initial;
-	width: 50%;
-	margin-right: 30%;
 
 	li {
 		display: block;
