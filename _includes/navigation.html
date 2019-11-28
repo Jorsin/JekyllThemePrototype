@@ -11,8 +11,7 @@
 			<div class="dropdown-content">
 				{% assign nameCompare = item.name | downcase %}
 				{% for topic in site[nameCompare] %}
-						{% assign topicHref = topic.url | remove_first: "/" %}
-						<a href="{{ topicHref | absolute_url }}">{{ topic.name }}</a>
+						<a href="{{ topic.url | absolute_url }}">{{ topic.name }}</a>
 				{% endfor %}
 			</div>
 			</div>

@@ -29,8 +29,7 @@ layout: default
 			<tr>
 				<td>{{ internalProject.name }}</td>
 				<td>{{ internalProject.description }}</td>
-				{% assign projectHref = internalProject.url | remove_first: "/" %}
-				<td class="linkCell"><a href="../{{ projectHref }}" class="boxLink">Link</a></td>
+				<td class="linkCell"><a href="{{ internalProject.url | absolute_url }}" class="boxLink">Link</a></td>
 			</tr>
 			{% endif %}
 		{% endfor %}
