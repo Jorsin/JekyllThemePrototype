@@ -6,5 +6,5 @@ layout: default
 	<h2>{{ page.name }}</h2>
 	{{ content }}
 	{% assign file = page.topic | downcase %}
-	<a href="{{ file | append: '.html' | absolute_url }}" class="boxLink">Back to topics</a>
+	<a href="../research/{{ file }}" class="boxLink">Back to topics</a>
 </div>
