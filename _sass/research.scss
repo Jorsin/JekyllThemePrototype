@@ -1,12 +1,10 @@
 #research {
-	display: inline-block;
-	margin: auto;
+	@extend %main-div;
 	text-align: initial;
-	width: 80%;
 
 	&Input {
-		width: 80%;
-		display: inline-block;
+		@extend %main-div;
+		display:inline-block;
 		text-align: left;
 	}
 
@@ -46,10 +44,8 @@
 }
 
 #topic {
-	display: inline-block;
-	margin: auto;
+	@extend %main-div;
 	text-align: initial;
-	width: 80%;
 
 	td {
 		padding: 10px;
@@ -80,11 +76,13 @@
 			display: none;
 		}
 	}
+
+	h3 {
+		color: $headerRed;
+	}
 }
 
 #project {
-	display: inline-block;
-	margin: auto;
+	@extend %main-div;
 	text-align: initial;
-	width: 80%;
 }

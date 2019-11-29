@@ -1,8 +1,8 @@
 @media (max-width: 550px) {
 	$navPos: absolute;
 
-	body {
-		
+	%main-mob {
+		width: 100%;
 	}
 
 	#banner {
@@ -49,7 +49,7 @@
 		display: block;
 		height: 60px;
 		width: 20%;
-		margin-right: 25%;
+		margin-right: 19%;
 
 		img {
 			width: 1em;
@@ -75,7 +75,7 @@
 	.dropdown:hover .dropdown-content {display: none;}
 	
 	#c-content {
-		width: 100%;
+		@extend %main-mob;
 
 		#twitter-content {
 			min-width: 0;
@@ -85,21 +85,52 @@
 		}
 	}
 
-	.pCatagory {
-		margin-left: -9%;
+	#people {
+		@extend %main-mob;
+
+		.pCatagory {
+			margin-left: -25%;
+			padding-left: 45%;
+		}
 	}
 
 	#contentContainer {
 		padding-top: 17%;
 	}
 
-	#topic, #project, #maps {
-		width: 100%;
+	#project, #maps {
+		@extend %main-mob;
+	}
+
+	#topic {
+		@extend %main-mob;
+
+		table {
+			#tableHead, #thSpacer {
+				display: none;
+			}
+
+			tr {
+				display: inline-block;
+			}
+
+			td {
+				display: inline-block;
+
+				&:nth-child(1) {
+					font-weight: bold;
+				}
+			}
+		}
 	}
 
 	#research{
-		width: 100%;
+		@extend %main-mob;
 		
+		&Input {
+			width: 100%;
+		}
+
 		li {
 			padding-right: 0;
 		}
@@ -107,7 +138,7 @@
 
 	#maps-content {
 		padding-right: 0px;
-		width: 100%;
+		@extend %main-mob;
 	}
 
 	#maps-panel {
@@ -116,5 +147,23 @@
 		min-width: 200px;
 		height: 100px;
 		padding-top: 1em;
+	}
+
+	#person {
+		@extend %main-mob;
+		margin-left: auto;
+		min-width: 0;
+
+		.peopleImg {
+			float: none;
+			height: 200px;
+			width: 200px;
+			margin-right: 0;
+			margin-left: 0;
+		}
+	}
+
+	footer p {
+		font-size: 0.9em;
 	}
 }
