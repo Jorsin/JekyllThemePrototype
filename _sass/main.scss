@@ -108,6 +108,10 @@ img[src~="content-small"] {
 	width: 10em;
 }
 
+img[src~="content-full-span"] {
+	width: 100%;
+}
+
 #c-content {
 	@extend %main-div;
 }
