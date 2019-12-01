@@ -104,6 +104,10 @@ ul {
 	}
 }
 
+img[src~="content-small"] {
+	width: 10em;
+}
+
 #c-content {
 	@extend %main-div;
 }
@@ -116,7 +120,15 @@ ul {
 		margin-left: -20.5%;
 		padding-left: 20.5%;
 		padding-right: 40%;
-		padding-top: 1%;
-		padding-bottom: 1%;
+		padding-top: 4em;
+		padding-bottom: 4em;
+	}
+
+	.oddSect {
+		background-color: $backGrey; 
+	}
+
+	.firstSect {
+		padding-top: 0;
 	}
 }
