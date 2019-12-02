@@ -7,36 +7,39 @@
 		text-align: left;
 	}
 
-	ul a {
-		display: inline-block;
-		text-decoration: none;
-		color: black;
-		height: 300px;
-		width: 200px;
-		margin-right: 70px;
-		outline: none;
+	ul {
+		padding-left: 0px;
 
-		&:active {
+		a {
+			display: inline-block;
+			text-decoration: none;
+			color: black;
+			height: 300px;
+			width: 200px;
+			margin-right: 70px;
 			outline: none;
+	
+			&:active {
+				outline: none;
+			}
+		}
+
+		li {
+			text-align: left;
+			display: inline-block;
+			vertical-align: top;
+	
+			h4 {
+				margin: 0px;
+				padding: 0px;
+				padding-top: 15px;
+			}
+	
+			p {
+				margin: 0px;
+			}
 		}
 	}
-
-	ul li {
-		text-align: left;
-		display: inline-block;
-		vertical-align: top;
-
-		h4 {
-			margin: 0px;
-			padding: 0px;
-			padding-top: 15px;
-		}
-
-		p {
-			margin: 0px;
-		}
-	}
-
 	.oddpCatagory {
 		background-color: $backGrey; 
 	}
