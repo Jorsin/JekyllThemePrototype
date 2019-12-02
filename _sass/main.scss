@@ -79,14 +79,13 @@ h5 { font-size: 1.1em; }
 h6 { font-size: 1em; }
 p { font-size: 1em; a { color: $headerRed; } }
 
-.boxLink {
-	display: inline-block;
-	background-color: $btnRed;
-	padding: 8px;
-	min-width: 100px;
-	color: white;
+a {
+	color: $headerRed;
 	text-decoration: none;
-	text-align: center;
+}
+
+a:visited {
+	color: $headerRed;
 }
 
 #contentContainer {
@@ -98,6 +97,20 @@ p { font-size: 1em; a { color: $headerRed; } }
 	h1, h2, h3 {
 		color: $headerRed;
 	}
+
+	.highlight {
+		background-color: transparent;
+	}
+
+	.boxLink {
+		display: inline-block;
+		background-color: $btnRed;
+		padding: 8px;
+		min-width: 100px;
+		color: white;
+		text-decoration: none;
+		text-align: center;
+	}
 }
 
 img[src~="content-small"] {
@@ -105,7 +118,7 @@ img[src~="content-small"] {
 }
 
 img[src~="content-medium"] {
-	width: 17em;
+	width: 14em;
 }
 
 img[src~="content-full-span"] {
