@@ -27,10 +27,11 @@ Add this line to your Jekyll site's `Gemfile`:
 gem "jekyll-theme-wand2", :git => 'https://github.com/wanduow/jekyll-theme-wand2', :branch => 'master'
 ```
 
-And add this line to your Jekyll site's `_config.yml`
+And add this line to your Jekyll site's `_config.yml` and make sure to comment out any remote theme.
 
 ```yaml
 theme: jekyll-theme-wand2
+#remote_theme: jekyll-theme-wand2
 ```
 
 And then execute:
