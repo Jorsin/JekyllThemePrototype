@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "proto-theme3"
-  spec.version       = "0.1.5"
+  spec.version       = "0.1.0"
   spec.authors       = ["Jorsin"]
   spec.email         = ["danielbesley0@gmail.com"]
 

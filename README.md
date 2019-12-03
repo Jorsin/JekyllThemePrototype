@@ -2,15 +2,15 @@
 
 A theme made for the wand website.
 
-## Installation
-
+## Installation for local use
+#### If theme folder is avaliable locally
 Add this line to your Jekyll site's `Gemfile`:
 
 ```ruby
-gem "jekyll-theme-wand2"
+gem "jekyll-theme-wand2", path: "path/to/theme_folder"
 ```
 
-And add this line to your Jekyll site's `_config.yml`:
+And add this line to your Jekyll site's `_config.yml`
 
 ```yaml
 theme: jekyll-theme-wand2
@@ -18,11 +18,54 @@ theme: jekyll-theme-wand2
 
 And then execute:
 
-    $ bundle
+    $ bundle install
 
-Or install it yourself as:
+#### If theme folder is stored on git
+Add this line to your Jekyll site's `Gemfile`:
 
-    $ gem install jekyll-theme-wand2
+```ruby
+gem "jekyll-theme-wand2", :git => 'https://github.com/wanduow/jekyll-theme-wand2', :branch => 'master'
+```
+
+And add this line to your Jekyll site's `_config.yml`
+
+```yaml
+theme: jekyll-theme-wand2
+```
+
+And then execute:
+
+    $ bundle install
+
+## Use on github pages
+In your sites `Gemfile` comment out respective lines as shown in this example:
+
+```ruby
+source "https://rubygems.org"
+gem "jekyll" 
+# gem "jekyll-theme-wand2 ", path: "../jekyll-theme-wand2"
+group :jekyll_plugins do
+  gem "github-pages"
+#   gem "jekyll-feed", "~> 0.12"
+end
+```
+
+And in your sites `_config.yml` provide the following values, and comment out the line `theme: jekyll-theme-wand2` if present.
+
+```yml
+title: WAND
+email: danielbesley0@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+ Write an awesome description for your new site here. You can edit this
+ line in _config.yml. It will appear in your document head meta (for
+ Google search results) and in your feed.xml site description.
+baseurl: "/wand.nz" # the subpath of your site, e.g. /blog
+url: "https://wanduow.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+twitter_username: jekyllrb
+github_username:  Jorsin
+remote_theme: wanduow/jekyll-theme-wand2
+#theme: jekyll-theme-wand2
+```
 
 ## Usage
 
