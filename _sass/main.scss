@@ -82,10 +82,14 @@ p { font-size: 1em; a { color: $headerRed; } }
 a {
 	color: $headerRed;
 	text-decoration: none;
-}
 
-a:visited {
-	color: $headerRed;
+	&:visited {
+		color: $headerRed;
+	}
+
+	&:hover {
+		text-decoration: underline;
+	}
 }
 
 #contentContainer {
@@ -99,7 +103,8 @@ a:visited {
 	}
 
 	.highlight {
-		background-color: transparent;
+		background-color: #E1E2E3;
+		padding: 5px;
 	}
 
 	.boxLink {
