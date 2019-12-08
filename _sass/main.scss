@@ -24,7 +24,7 @@ body {
 
 footer {
 	background-color: $headerRed;
-    height: 80px;
+    height: 10vh;
 	display: inline-block;
 	width: 110%;
 	margin-top: -8px;
@@ -93,7 +93,7 @@ a {
 }
 
 #contentContainer {
-	min-height: 100vh;
+	min-height: 90vh;
 	padding: 1% 5% 0% 5%;
 	font-family: $siteFont;
 	text-align: center;
