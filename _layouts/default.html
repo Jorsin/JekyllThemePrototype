@@ -4,7 +4,9 @@
 	<body>
 		{% include banner.html %}
 		{% include navigation.html %}
-		<script>clean(document.getElementById('navigation'));</script>
+		<script>
+			clean(document.getElementById('navigation'));
+		</script>
 		<div id="contentContainer">
 			{{ content }}
 		</div>
